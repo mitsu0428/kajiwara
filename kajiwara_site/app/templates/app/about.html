@@ -70,4 +70,37 @@
         <hr>
     {% endfor %}
 </div>
+<h3 class="mb-4">Software Skills</h3>
+<div class="mb-5">
+    <div class="row">
+        { for software in software_data }
+            <div class="col-6 col-md3">
+                <h5 class="mb-0">{{ software.name }}<span class="small.secondary"> - {{ software.level }}</span></h5>
+                <div class="d-flex flex-row">
+                    <div class="star-rating">
+                        <div class="star-rating-star" style="width: {{ software.percemtage }}%">★★★★★</div>
+                        <div class="star-rating-back">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        { endfor }
+    </div>
+</div>
+
+<h3 class="mb-4">Technical</h3>
+<div class="mb-5">
+    <div class="row">
+        { for Technical in Technical_data }
+            <div class="col-6 col-md3">
+                <h5 class="mb-0">{{ Technical.name }}<span class="small.secondary"> - {{ Technical.level }}</span></h5>
+                <div class="d-flex flex-row">
+                    <div class="star-rating">
+                        <div class="star-rating-star" style="width: {{ Technical.percemtage }}%">★★★★★</div>
+                        <div class="star-rating-back">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        { endfor }
+    </div>
+</div>
 {% endblock%}

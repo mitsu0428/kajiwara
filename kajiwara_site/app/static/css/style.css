@@ -100,3 +100,32 @@ body {
 .icon {
     padding: 10px 8px;
 }
+.star-rating {
+    position: relative;
+    font-size: 30px;
+    word-wrap: normal!important;
+}
+
+.star-rating-front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #EE6C4D;
+}
+
+.star-rating-back {
+    color: #ccc;
+}
+.contact {
+    max-width: 500px;
+}
+
+.form-control:focus {
+    border-color: #EE6C4D;
+    box-shadow: none;
+}
+
+.card {
+    border: none;
+}
