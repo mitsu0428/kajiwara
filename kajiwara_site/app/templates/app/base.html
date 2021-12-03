@@ -12,7 +12,7 @@
     <link rel="icon" type="image/jpg" href="{% static 'icon/favicon.jpg' %}">
     <title>Kajiwara</title>
 </head>
-<body>
+<body class="base">
     <a href="/" class="navbar-brand">
         <img src="{% static 'img/kajitop.svg' %}" alt="" width="60" height="60">
     </a>
@@ -46,7 +46,7 @@
 
     {% block extra_js %}
     {% endblock %}
-
+    <canvas id="canvas"></canvas>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 </body>
